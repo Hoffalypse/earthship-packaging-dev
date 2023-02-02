@@ -2,18 +2,22 @@
   "name": "earthship-packaging-dev",
   "version": "1.0.0",
   "description": "dev for earthship packaging ecommerce page",
-  "main": "index.js",
+  "main": "server.js",
   "scripts": {
-    "test": "echo \"Error: no test specified\" && exit 1"
+    "start": "node Server/server"
+
   },
   "repository": {
     "type": "git",
     "url": "git+https://github.com/Hoffalypse/earthship-packaging-dev.git"
   },
-  "author": "",
+  "author": "Bryan Wienhoff",
   "license": "ISC",
   "bugs": {
     "url": "https://github.com/Hoffalypse/earthship-packaging-dev/issues"
   },
-  "homepage": "https://github.com/Hoffalypse/earthship-packaging-dev#readme"
+  "homepage": "https://github.com/Hoffalypse/earthship-packaging-dev#readme",
+  "dependencies": {
+    "express": "^4.18.2"
+  }
 }
