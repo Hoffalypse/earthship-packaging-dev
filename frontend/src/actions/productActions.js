@@ -5,7 +5,7 @@ import {
   PRODUCT_LIST_FAIL,
 } from "../constants/productConstants";
 
-
+// redux actions
 export const listProducts = () => async (dispatch) => {
     try{
         dispatch ({type: PRODUCT_LIST_REQUEST})
