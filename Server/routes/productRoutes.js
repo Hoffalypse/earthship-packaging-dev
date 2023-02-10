@@ -1,6 +1,6 @@
 import express from "express";
 const router = express.Router();
-import { getProducts, getProductById } from '../controllers/product.controller.js'
+import { getProducts, getProductById } from '../controllers/productController.js'
 
 // This is the api/product route
 
