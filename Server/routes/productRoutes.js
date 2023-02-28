@@ -1,6 +1,7 @@
 import express from "express";
 const router = express.Router();
-import { getProducts, getProductById } from '../controllers/productController.js'
+import { getProducts, getProductById, deleteProduct } from '../controllers/productController.js'
+import { protect, admin } from '../middleware/authMiddleware.js'
 
 // This is the api/product route
 
@@ -8,8 +9,6 @@ import { getProducts, getProductById } from '../controllers/productController.js
 // Fetch All products Public Route
 
 router.route("/").get(getProducts)
-
-// Fetch one product public route 
-router.route("/:id").get(getProductById)
+router.route("/:id").get(getProductById).delete(protect, admin, deleteProduct)
 
 export default router;
