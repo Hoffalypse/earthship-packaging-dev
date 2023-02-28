@@ -7,7 +7,7 @@ import Loader from '../components/Loader'
 // import Paginate from '../components/Paginate'
 import {
   listProducts,
-//   deleteProduct,
+  deleteProduct,
 //   createProduct,
 } from '../actions/productActions'
 // import { PRODUCT_CREATE_RESET } from '../constants/productConstants'
@@ -61,9 +61,9 @@ const ProductListScreen = ({ history, match }) => {
   ])
 
   const deleteHandler = (id) => {
-    // if (window.confirm('Are you sure')) {
-    //   dispatch(deleteProduct(id))
-    // }
+    if (window.confirm('Are you sure you want to Delete this Product?')) {
+      dispatch(deleteProduct(id))
+    }
   }
 
   const createProductHandler = () => {
