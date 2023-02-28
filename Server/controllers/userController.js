@@ -45,12 +45,12 @@ const updateUserProfile = asyncHandler(async (req, res) => {
   const user = await User.findById(req.user._id);
 
   if (user) {
-    user.name = req.body.name || user.name
-    user.email  = req.body.email || user.email
-    if(req.body.password){
-      user.password = req.body.password
+    user.name = req.body.name || user.name;
+    user.email = req.body.email || user.email;
+    if (req.body.password) {
+      user.password = req.body.password;
     }
-    const updatedUser = await user.save()
+    const updatedUser = await user.save();
 
     res.json({
       _id: updatedUser._id,
@@ -59,8 +59,7 @@ const updateUserProfile = asyncHandler(async (req, res) => {
       isAdmin: updatedUser.isAdmin,
       token: generateToken(updatedUser._id),
     });
-    }
-   else {
+  } else {
     res.status(404);
     throw new Error("User not Found");
   }
@@ -92,9 +91,9 @@ const registerUser = asyncHandler(async (req, res) => {
       isAdmin: user.isAdmin,
       token: generateToken(user._id),
     });
-  }else {
-    res.status(400)
-    throw new Error("Invalid User Data")
+  } else {
+    res.status(400);
+    throw new Error("Invalid User Data");
   }
 });
 
@@ -102,9 +101,20 @@ const registerUser = asyncHandler(async (req, res) => {
 
 const getUsers = asyncHandler(async (req, res) => {
   const users = await User.find({});
-  res.json(users)
-
-  
+  res.json(users);
 });
 
-export { authUser, getUserProfile, registerUser, updateUserProfile, getUsers };
+//delete User private/admin
+
+const deleteUser = asyncHandler(async (req, res) => {
+  const user = await User.findById(req.params.id);
+  if (user) {
+    await user.remove();
+    res.json({ message: "User Removed" });
+  } else {
+    res.status(404);
+    throw new Error("User Not Found");
+  }
+});
+
+export { authUser, getUserProfile, registerUser, updateUserProfile, getUsers, deleteUser };
