@@ -16,7 +16,7 @@ import PlaceOrderScreen from "./Screens/PlaceOrderScreen";
 import OrderScreen from "./Screens/OrderScreen";
 import UserListScreen from "./Screens/UserListScreen";
 import UserEditScreen from "./Screens/UserEditScreen";
-import ProductListScreen from "./Screens/productListScreen";
+import ProductListScreen from "./Screens/ProductListScreen";
 
 
 function App() {
