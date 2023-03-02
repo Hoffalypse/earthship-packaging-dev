@@ -31,7 +31,7 @@ const Header = () => {
         <Navbar bg="light" expand="lg" collapseOnSelect>
           <Container>
             <LinkContainer to="/">
-              <Navbar.Brand>EarthShip Packaging</Navbar.Brand>
+              <Navbar.Brand>Earthship Packaging</Navbar.Brand>
             </LinkContainer>
             <Navbar.Toggle aria-controls="basic-navbar-nav" />
             <Navbar.Collapse id="basic-navbar-nav">
