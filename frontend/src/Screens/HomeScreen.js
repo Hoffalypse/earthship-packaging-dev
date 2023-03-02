@@ -11,6 +11,7 @@ import Meta from '../components/Meta'
 import { listProducts } from '../actions/productActions'
 
 const HomeScreen = ({ match }) => {
+  
   const keyword = match.params.keyword
 
   const pageNumber = match.params.pageNumber || 1
