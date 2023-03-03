@@ -196,7 +196,7 @@ const OrderScreen = ({ match, history }) => {
                 </Row>
               </ListGroup.Item>
               {!order.isPaid && (
-                <ListGroup.Item>
+                <ListGroup.Item style={{backgroundColor:'white'}}>
                   {loadingPay && <Loader />}
                   {!sdkReady ? (
                     <Loader />
@@ -204,6 +204,7 @@ const OrderScreen = ({ match, history }) => {
                     <PayPalButton
                       amount={order.totalPrice}
                       onSuccess={successPaymentHandler}
+                      
                     />
                   )}
                 </ListGroup.Item>
