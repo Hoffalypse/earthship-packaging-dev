@@ -59,7 +59,7 @@ const ProductListScreen = ({ history, match }) => {
     createdProduct,
     pageNumber,
   ])
-
+//delete handler
   const deleteHandler = (id) => {
     if (window.confirm('Are you sure you want to Delete this Product?')) {
       dispatch(deleteProduct(id))
