@@ -27,7 +27,7 @@ const HomeScreen = ({ match }) => {
 
   return (
     <>
-    <Image src='/images/EarthShip-with-text-white.png' alt='Earthship Packaging'/>
+    <Image src='/images/mouse.jpg' alt='Earthship Packaging'/>
       <Meta />
       {!keyword ? (
         <ProductCarousel />
