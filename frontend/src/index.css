@@ -24,12 +24,16 @@ h2 {
 .paypal-button {
   margin-top: 10px;
 }
+.card{
+  --bs-card-bg: #69c6d7;
+}
 
 /* carousel */
 .carousel-item-next,
 .carousel-item-prev,
 .carousel-item.active {
   display: flex;
+  background-color: #69c6d7;
 }
 .carousel-caption {
   position: absolute;
@@ -41,7 +45,7 @@ h2 {
   
 }
 
-.carousel img {
+/* .carousel img {
  
   height: 400px;
   padding: 30px;
@@ -49,7 +53,7 @@ h2 {
   border-radius: 50%;
   margin-left: auto;
   margin-right: auto;
-}
+} */
 .carousel a {
   margin: 0 auto;
 }
