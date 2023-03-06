@@ -26,8 +26,9 @@ const HomeScreen = ({ match }) => {
   }, [dispatch, keyword, pageNumber])
 
   return (
-    <>
-    <Image src='Earthship-with-text-white.png' alt='Earthship Packaging'/>
+  < >
+  <div>
+    <Image src='images/Earthship-with-text-white.png' alt='Earthship Packaging'/>
       <Meta />
       {!keyword ? (
         <ProductCarousel />
@@ -57,7 +58,8 @@ const HomeScreen = ({ match }) => {
           />
         </>
       )}
-    </>
+      </div>
+  </>
   )
 }
 
