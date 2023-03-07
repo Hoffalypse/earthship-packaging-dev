@@ -8,7 +8,7 @@ const ContactScreen = () => {
   const [message, setMessage] = useState();
 
   const submitHandler = (e) => {
-    e.preventDefault();
+    
   };
 
   return (
