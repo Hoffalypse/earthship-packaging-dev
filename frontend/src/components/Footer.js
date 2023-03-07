@@ -15,8 +15,9 @@ const Footer = () => {
               <Link to='/shippinginfo'>
               <li>Shipping</li>
               </Link>
+              <Link to='/returns'>
               <li>Returns</li>
-
+              </Link>
               <li>Privacy</li>
               <li>Terms</li>
             </ul>
