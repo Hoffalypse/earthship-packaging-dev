@@ -1,19 +1,36 @@
-import React from 'react'
-import {Container, Row, Col} from 'react-bootstrap'
+import React from "react";
+import { Container, Row, Col } from "react-bootstrap";
+import { Link } from 'react-router-dom'
 const Footer = () => {
   return (
     <>
-     <footer>
-        <Container>
-            <Row>
-                <Col className='text-center py-3'>
-                    Copyright &copy; Earthship Packaging
-                </Col>
-            </Row>
-        </Container>
-        </footer> 
-    </>
-  )
-}
+      <footer>
+        <div style={{ background: "#f0f5fa" }}>
+          <Container>
+            
+          
+            <ul style={{listStyleType:'none', marginLeft:'20%', paddingTop:'30px'}}>
+            <strong>Links</strong>
+              <li>Contact Us</li>
+              <Link to='/shippinginfo'>
+              <li>Shipping</li>
+              </Link>
+              <li>Returns</li>
 
-export default Footer
+              <li>Privacy</li>
+              <li>Terms</li>
+            </ul>
+         
+            <Row>
+              <Col className="text-center py-3">
+                Copyright &copy; Earthship Packaging
+              </Col>
+            </Row>
+          </Container>
+        </div>
+      </footer>
+    </>
+  );
+};
+
+export default Footer;
