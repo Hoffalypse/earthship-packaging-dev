@@ -20,6 +20,7 @@ import ProductEditScreen from "./Screens/ProductEditScreen";
 import OrderListScreen from "./Screens/OrderListScreen";
 import ShippingInfoScreen from "./Screens/ShippingInfoScreen";
 import ReturnsScreen from "./Screens/ReturnsScreen"
+import PrivacyPolicyScreen from "./Screens/PrivacyPolicyScreen"
 
 function App() {
   return (
@@ -48,6 +49,7 @@ function App() {
           <Route path="/cart/:id?" component={CartScreen} />
           <Route path="/shippinginfo" component={ShippingInfoScreen} />
           <Route path="/returns" component={ReturnsScreen} />
+          <Route path="/privacy" component={PrivacyPolicyScreen} />
         </Container>
       </main>
       <Footer />
