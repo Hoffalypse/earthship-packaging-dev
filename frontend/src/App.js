@@ -22,6 +22,7 @@ import ShippingInfoScreen from "./Screens/ShippingInfoScreen";
 import ReturnsScreen from "./Screens/ReturnsScreen";
 import PrivacyPolicyScreen from "./Screens/PrivacyPolicyScreen";
 import TermsScreen from "./Screens/TermsScreen";
+import ContactScreen from "./Screens/ContactScreen";
 
 
 function App() {
@@ -53,6 +54,7 @@ function App() {
           <Route path="/returns" component={ReturnsScreen} />
           <Route path="/privacy" component={PrivacyPolicyScreen} />
           <Route path="/terms" component={TermsScreen} />
+          <Route path="/contact" component={ContactScreen} />
         </Container>
       </main>
       <Footer />

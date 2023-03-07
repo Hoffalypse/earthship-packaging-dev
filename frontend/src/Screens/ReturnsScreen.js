@@ -2,8 +2,8 @@ import React from "react";
 
 const ReturnsScreen = () => {
   return (
-    <div style={{ textAlign: "center" }} className="text-entry">
-      <h2>Refund Policy</h2>
+    <div  className="text-entry">
+      <h2 style={{ textAlign: "center" }}>Refund Policy</h2>
       <p>
         Returns <br /> Our policy lasts 30 days. If 30 days have gone by since
         your purchase, unfortunately we can’t offer you a refund or exchange.

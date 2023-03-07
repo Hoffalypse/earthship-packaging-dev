@@ -2,8 +2,8 @@ import React from "react";
 
 const PrivacyPolicyScreen = () => {
   return (
-    <div style={{ textAlign: "center" }} className="text-entry">
-      <h2>Privacy Policy</h2>
+    <div  className="text-entry">
+      <h2 style={{ textAlign: "center" }}>Privacy Policy</h2>
       <p>
         This Privacy Policy describes how your personal information is
         collected, used, and shared when you visit or make a purchase from

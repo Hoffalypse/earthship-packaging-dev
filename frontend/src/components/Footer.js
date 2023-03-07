@@ -11,17 +11,19 @@ const Footer = () => {
           
             <ul style={{listStyleType:'none', marginLeft:'20%', paddingTop:'30px'}}>
             <strong>Links</strong>
-              <li>Contact Us</li>
-              <Link to='/shippinginfo'>
+            <Link to='/contact' style={{textDecoration:'none'}}>
+              <li >Contact Us</li>
+              </Link>
+              <Link to='/shippinginfo' style={{textDecoration:'none'}}>
               <li>Shipping</li>
               </Link>
-              <Link to='/returns'>
+              <Link to='/returns' style={{textDecoration:'none'}}>
               <li>Returns</li>
               </Link>
-              <Link to='/privacy'>
+              <Link to='/privacy' style={{textDecoration:'none'}}>
               <li>Privacy</li>
               </Link>
-              <Link to='/terms'>
+              <Link to='/terms' style={{textDecoration:'none'}}>
               <li>Terms</li>
               </Link>
             </ul>

@@ -2,8 +2,8 @@ import React from "react";
 
 const TermsScreen = () => {
   return (
-    <div style={{ textAlign: "center" }} className="text-entry">
-      <h2>Terms of Service</h2>
+    <div  className="text-entry">
+      <h2 style={{ textAlign: "center" }}>Terms of Service</h2>
       <p>
         Overview
         <br />
