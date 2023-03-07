@@ -3,8 +3,8 @@ import { Image } from "react-bootstrap";
 
 const ShippingInfoScreen = () => {
   return (
-    <div style={{ textAlign: "center" }} className="text-entry">
-      <h2>Shipping</h2>
+    <div  className="text-entry">
+      <h2 style={{ textAlign: "center" }}>Shipping</h2>
       <p>
         Our goal is to offer you the best shipping options, no matter where you
         live. Every day, we deliver to customers across the world, ensuring that
