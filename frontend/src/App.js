@@ -19,8 +19,10 @@ import ProductListScreen from "./Screens/ProductListScreen";
 import ProductEditScreen from "./Screens/ProductEditScreen";
 import OrderListScreen from "./Screens/OrderListScreen";
 import ShippingInfoScreen from "./Screens/ShippingInfoScreen";
-import ReturnsScreen from "./Screens/ReturnsScreen"
-import PrivacyPolicyScreen from "./Screens/PrivacyPolicyScreen"
+import ReturnsScreen from "./Screens/ReturnsScreen";
+import PrivacyPolicyScreen from "./Screens/PrivacyPolicyScreen";
+import TermsScreen from "./Screens/TermsScreen";
+
 
 function App() {
   return (
@@ -50,6 +52,7 @@ function App() {
           <Route path="/shippinginfo" component={ShippingInfoScreen} />
           <Route path="/returns" component={ReturnsScreen} />
           <Route path="/privacy" component={PrivacyPolicyScreen} />
+          <Route path="/terms" component={TermsScreen} />
         </Container>
       </main>
       <Footer />
