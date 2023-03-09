@@ -34,7 +34,8 @@ const Footer = () => {
             </Row>
             <Row>
               <Col className="text-center py-3">
-                Copyright &copy; Earthship Packaging
+                Copyright &copy; Earthship Packaging 2023<br/>
+                <p style={{fontStyle:'italic'}}>Powered by HoffTech Solutions </p>
               </Col>
             </Row>
           </Container>
